@@ -1,11 +1,15 @@
 # Evolución y comparación de series de datos (fundamentales)
 
-Una pequeña aplicación Javascript para mostrar gráficas de evolución de datos de empresas, y para así poder comparar la evolución de diferentes datos de diferentes empresas.<br>
+Una pequeña aplicación web para mostrar gráficas de evolución de datos de empresas, y para así poder ver al mismo tiempo varios datos de una empresa, o de diferentes empresas.<br>
 <br>
-He intentado que cualquiera pueda modificar y añadir información sobre los datos fundamentales de la empresa, aunque no se tengan conocimientos de programación. Solamente hay que editar un fichero con un editor de textos como el bloc de notas, aunque sería mejor usar un editor que muestre la sintaxis en colores, como Notepad++, PsPad,...  Yo he usado Visual Studio Code para el desarrollo.
+Puedes probarla en [mi versión online](https://serafinje.github.io/fundamentales.html).<br>
+<br>
+He intentado que cualquiera pueda modificar y añadir información sobre los datos fundamentales de la empresa, aunque no se tengan conocimientos de programación. Solamente hay que editar un fichero con un editor de textos como el bloc de notas, aunque sería mejor usar un editor que muestre la sintaxis en colores, como Notepad++, PsPad,...  Yo he usado Visual Studio Code para el desarrollo.<br>
 <br>
 También he intentado que sea fácil añadir nuevos tipos de datos, mediante el desarrollo de nuevas funciones. En este caso ya se hace necesario saber un poco de programación, pero creo que no mucho.<br>
-<br><br>
+<br>
+Quien quiera hacer modificaciones puede descargar los ficheros en un [zip](https://github.com/serafinje/serafinje.github.io/archive/master.zip) y modificar los dos ficheros que explicaré a continuación.<br>
+<br>
 # Añadir empresas y datos
 Para añadir empresas y sus datos vamos a editar el fichero <b>datos.js</b> y añadimos dos tipos de información, en las dos secciones que hay:
 <br>
