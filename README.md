@@ -14,17 +14,15 @@ Creamos la estructura de la empresa llamando a la función creaEmpresa() y pasan
 <code>var inditex = creaEmpresa( "Inditex", "Distribución");</code>
 2) En la siguiente parte, "2) Datos históricos de las empresas", le asignamos los datos anuales que tengamos.<br>
 Añadimos la lista de años (imprescindible) y los datos que tengamos de cada año:<br>
-<code>
+```javascript
 inditex.years = [2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000];
-</code>
-<code>
-inditex.NumAcciones = [3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000,	 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000];<br>
-</code>
-<code>
+inditex.NumAcciones = [3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000,	 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000];
 inditex.dpa = [0.6800, 0.6000, 0.5200, 0.4840, 0.4400, 0.3600, 0.3200, 0.2400, 0.2100, 0.2100, 0.1680, 0.1340, 0.0960, 0.0700, 0.0280, 0.0220];
-</code>
+```
 3) Finalmente invocamos la función que organiza la información en un objeto manejable por el programa:
-<code>inicializa(inditex);</code>
+```javascript
+inicializa(inditex);
+```
 <br>
 Y así el resto de información. No hace falta añadir todos los datos. Los datos que no se tengan no se dibujarán.<br>
 Reglas importantes:
@@ -38,23 +36,28 @@ Reglas importantes:
 Si queremos añadir nueva información para mostrar, <i>por ejemplo la cantidad total de dividendo</i>, tenemos que hacer una función para devolver el dato. Esto lo haremos en el fichero <b>fundamentales.js</b>, en dos secciones:
 1) Arriba del todo, apartado "1) LISTA DE DATOS QUE DEBEMOS TENER DISPONIBLES", añadimos el nombre de la nueva función.<br>
 En la lista de funciones añadimos una nueva entrada con el nombre de la función que vamos a crear, la etiqueta que se mostrará, y el eje "Y" donde va:<br>
-    <code>,{eje: 3,etiqueta: "Dividendo total"            ,funcion: dividendoTotal  }</code><br>
+```javascript
+    ,{eje: 3,etiqueta: "Dividendo total"            ,funcion: dividendoTotal  }
+```
+<br>
 El gráfico puede tener varios ejes "Y", de forma cada serie tenga un rango (Y mínima -> Y máxima) diferente, según la magnitud a la que se refiera. Por ejemplo una serie que muestre el DPA de una acción normalmente tendrá valores entre 0 y 10, poco más. En cambio una serie que muestre los activos totales tendrá un rango en los cientos o miles de millones. Por lo tanto estos dos datos no deben ir en el mismo eje, ya que el dato de DPA no se vería. Mi decisión arbitraria ha sido asignar el eje 1 para los porcentajes y ratios, el 2 para magnitudes relacionadas con el valor de la acción (cotización, DPA, BPA,...), y el 3 para datos relacionados con el tamaño de la empresa (ingresos, gastos, número de acciones,...).<br>
 En este caso parece que el eje correcto sería el 3.<br><br>
 
 2) En la sección "2) FUNCIONES PARA DEVOLVER DATOS FUNDAMENTALES" programamos la nueva función.<br>
 La función recibe como parámetro un objeto con los datos fundamentales de una empresa en un año determinado. Los datos que podemos usar son los que le hemos asignado en <b>datos.js</b>, y en la función inicializa() podemos ver cómo se asignan los datos; y si queremos guardar nueva información, siempre podemos modificar esta función.<br>
-<code>function dividendoTotal(empresa) {</code><br>
-<code>    if (empresa.DividendoTotal) {</code><br>
-<code>        return empresa.DividendoTotal;</code><br>
-<code>    } else</code><br>
-<code>    if (empresa.DPA && empresa.NumAcciones) {</code><br>
-<code>        return empresa.DPA*empresa.NumAcciones;</code><br>
-<code>    }</code><br>
-<code>    else {</code><br>
-<code>        return null;</code><br>
-<code>    }</code><br>
-<code>}</code><br>
+```javascript
+function dividendoTotal(empresa) {
+    if (empresa.DividendoTotal) {
+        return empresa.DividendoTotal;
+    } else
+    if (empresa.DPA && empresa.NumAcciones) {
+        return empresa.DPA*empresa.NumAcciones;
+    }
+    else {
+        return null;
+    }
+}
+```
 
 Como se puede ver, se intenta usar un dato "empresa.DividendoTotal" que no existe pero que se podría asignar al objeto, en la función inicializa(), si lo tenemos.
 
