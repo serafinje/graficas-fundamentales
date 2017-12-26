@@ -14,15 +14,11 @@ Creamos la estructura de la empresa llamando a la función creaEmpresa() y pasan
 <code>var inditex = creaEmpresa( "Inditex", "Distribución");</code>
 2) En la siguiente parte, "2) Datos históricos de las empresas", le asignamos los datos anuales que tengamos.<br>
 Añadimos la lista de años (imprescindible) y los datos que tengamos de cada año:<br>
-<code>
+```javascript
 inditex.years = [2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001, 2000];
-</code>
-<code>
 inditex.NumAcciones = [3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000,	 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000, 3116652000];<br>
-</code>
-<code>
 inditex.dpa = [0.6800, 0.6000, 0.5200, 0.4840, 0.4400, 0.3600, 0.3200, 0.2400, 0.2100, 0.2100, 0.1680, 0.1340, 0.0960, 0.0700, 0.0280, 0.0220];
-</code>
+```
 3) Finalmente invocamos la función que organiza la información en un objeto manejable por el programa:
 <code>inicializa(inditex);</code>
 <br>
