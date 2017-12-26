@@ -38,6 +38,7 @@
             choiceContainer.append("<div id='div"+nombreEmpresaID+"'>");
             choiceContainer.append("</div>");
             var divEmpresa = $("#div"+nombreEmpresaID);  // Este es el div como variable
+            divEmpresa.addClass("classEmpresas");
             divEmpresa.append($("<table id='tbl"+nombreEmpresaID+"' border='1' width='100%'/>")
                         .append($('<tr>')
                             .append($('<td style="text-align: center; vertical-align: middle">'))

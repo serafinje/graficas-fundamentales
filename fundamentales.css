@@ -9,7 +9,7 @@
 .demo-container {
 	box-sizing: border-box;
 	width: 1024px;
-	height: 550px;
+	height: 600px;
 	padding: 20px 15px 15px 15px;
 	margin: 15px auto 30px auto;
 	border: 1px solid #ddd;
@@ -38,11 +38,17 @@
 #choices {
 	float: right;
 	width: 310px;
+	height: 560px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 14px
+	font-size: 14px;
+	/*overflow-y: scroll;*/
 }
 
 #empresa {
     width: 100%
 }
 
+.classEmpresas {
+	height: 542px;
+	overflow-y: scroll;
+}
