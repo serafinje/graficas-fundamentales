@@ -144,7 +144,7 @@ function dibujar(grafico,tooltip)
  * @param {*} axis
  */
 function formatoNumeros(numero,axis) {
-    if (numero>1.00E6 || numero<1.00E6) {
+    if (numero>1.00E6 || numero<-1.00E6) {
         numero = (numero/1.00E6).toFixed(2)+"M";
     } else {
         numero = numero.toFixed(2);
