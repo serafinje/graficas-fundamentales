@@ -47,10 +47,10 @@ var funciones = [
     // Eje 4: Magnitudes entre 0 y 20-30 como PER y otros
     //,{eje: 3,etiqueta: "PER Máximo"          ,funcion: perMaximo }    // PER máximo y mínimo no les veo mucha utilidad por ahora
     //,{eje: 3,etiqueta: "PER Mínimo"          ,funcion: perMinimo }
-    ,{eje: 3,etiqueta: "PER Medio"           ,funcion: perMedio  }
-    //,{eje: 3,etiqueta: "Precio/VC máximo"    ,funcion: precio_vc_maximo  }  // Aquí tampoco usamos máximos y mínimos
-    //,{eje: 3,etiqueta: "Precio/VC mínimo"    ,funcion: precio_vc_minimo  }
-    ,{eje: 3,etiqueta: "Precio/VC medio"     ,funcion: precio_vc_medio  }
+    ,{eje: 4,etiqueta: "PER Medio"           ,funcion: perMedio  }
+    //,{eje: 2,etiqueta: "Precio/VC máximo"    ,funcion: precio_vc_maximo  }  // Aquí tampoco usamos máximos y mínimos
+    //,{eje: 2,etiqueta: "Precio/VC mínimo"    ,funcion: precio_vc_minimo  }
+    ,{eje: 2,etiqueta: "Precio/VC medio"     ,funcion: precio_vc_medio  }
 ];
 
 
