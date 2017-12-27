@@ -11,7 +11,7 @@ También he intentado que sea fácil añadir nuevos tipos de datos, mediante el 
 Quien quiera hacer modificaciones puede descargar los ficheros en un [zip](https://github.com/serafinje/serafinje.github.io/archive/master.zip) y modificar los dos ficheros que explicaré a continuación.<br>
 <br>
 # Añadir empresas y datos
-Para añadir empresas y sus datos vamos a editar el fichero <b>datos.js</b> y añadimos dos tipos de información, en las dos secciones que hay:
+Para añadir empresas y sus datos vamos a editar el fichero [<b>datos.js</b>](https://github.com/serafinje/serafinje.github.io/blob/master/datos.js) y añadimos dos tipos de información, en las dos secciones que hay:
 <br>
 1) En la parte de arriba del fichero, sección "1) LISTA DE EMPRESAS", añadimos el comando para crearla.<br>
 Creamos la estructura de la empresa llamando a la función creaEmpresa() y pasando el nombre y el sector:<br>
@@ -37,7 +37,7 @@ Reglas importantes:
 
 
 # Añadir nuevas funciones
-Si queremos añadir nueva información para mostrar, <i>por ejemplo la cantidad total de dividendo</i>, tenemos que hacer una función para devolver el dato. Esto lo haremos en el fichero <b>fundamentales.js</b>, en dos secciones:
+Si queremos añadir nueva información para mostrar, <i>por ejemplo la cantidad total de dividendo</i>, tenemos que hacer una función para devolver el dato. Esto lo haremos en el fichero [<b>fundamentales.js</b>](https://github.com/serafinje/serafinje.github.io/blob/master/fundamentales.js), en dos secciones:
 1) Arriba del todo, apartado "1) LISTA DE DATOS QUE DEBEMOS TENER DISPONIBLES", añadimos el nombre de la nueva función.<br>
 En la lista de funciones añadimos una nueva entrada con el nombre de la función que vamos a crear, la etiqueta que se mostrará, y el eje "Y" donde va:<br>
 ```javascript
