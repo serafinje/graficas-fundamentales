@@ -130,7 +130,8 @@ function dibujar(grafico,tooltip)
             var texto = x+": "+y;
             $("#"+tooltip).html(texto)
                 .css({top: item.pageY+5, left: item.pageX+5})
-                .fadeIn(200);
+                //.fadeIn(200);
+                .show();
         } else {
             $("#"+tooltip).hide();
         }
